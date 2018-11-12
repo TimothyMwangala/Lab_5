@@ -1,0 +1,79 @@
+/* MOBILE AND GLOBAL STYLES */
+
+/* applies to screens smaller than 500px (first breakpoint) */
+/* and above unless overwritten below */
+
+body {
+  background: #fcc;
+}
+
+.menu{
+  background-color: #323c4c;
+  color: #e8a288;
+  line-height: 2em;
+  display: none;
+}
+
+.hoverzone{
+  position: relative;
+}
+
+.hoverzone:hover .menu{
+  display: block;
+}
+
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+
+  /* applies to screens wider than 499px */
+
+  body {
+    background: #cfc;
+  }
+
+  /*.menu{
+    display: none;
+  }*/
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+  }
+  nav a {
+    padding: 1.25em 1.5em;
+    color: #ccc;
+    background: #555;
+    text-decoration: none;
+    transition: all 1.5s;
+  }
+  nav a:hover {
+    color: #dfd;
+    background: #797;
+  }
+
+}
+
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+
+  /* applies to screens wider than 999px */
+
+  body {
+    background: #ccf;
+  }
+}
+
+.value {
+  width: 50%;
+  text-align: center;
+}
+
+fieldset {
+  margin-bottom: 0.5em;
+}
